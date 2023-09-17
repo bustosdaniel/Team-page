@@ -1,0 +1,39 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #fff;
+  color: black;
+}
+
+body {
+  margin: 20px;
+  display: flex;
+  min-height: 100vh;
+  max-width: 1440px;
+  justify-content: center;
+}
+
+@media (min-width: 750px) {
+  .card-element-style {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    overflow-y: visible !important;
+  }
+  .card-information {
+    display: flex;
+    flex-direction: row;
+    margin: 110px 0 96px;
+    justify-content: center;
+    gap: 120px;
+  }
+  .card-information .card-title {
+    padding: 0;
+  }
+  .card-information .card-subtitle-content {
+    margin: 0;
+    width: 300px;
+  }
+}
